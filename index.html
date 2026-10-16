@@ -691,14 +691,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <label class="block text-xs uppercase tracking-wider font-bold mb-2">Teléfono</label>
                             <input type="tel" class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde" placeholder="+57 300 000 0000" name="celular" required>
                         </div>
-                        <div>
+                        <div class="relative custom-sede-dropdown" data-dropdown="inline">
                             <label class="block text-xs uppercase tracking-wider font-bold mb-2">Sede de interés</label>
-                            <select class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde" name="para_quien" required>
-                                <option value="" disabled selected>Selecciona una sede</option>
-                                <option value="Bernal">Bernal — desde $8.500.000</option>
-                                <option value="Balsos">Balsos — desde $12.300.000</option>
-                                <option value="Suramerica">Suramérica — desde $12.800.000</option>
-                            </select>
+                            <input type="text" name="para_quien" required class="sr-only sede-hidden-input" tabindex="-1" autocomplete="off">
+                            <button type="button" onclick="toggleSedeDropdown('inline')" class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde flex items-center justify-between text-left">
+                                <span class="sede-selected-display text-gray-500">Selecciona una sede</span>
+                                <svg class="w-4 h-4 text-karu-verde transition-transform duration-200 sede-chevron shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <div class="sede-dropdown-menu hidden absolute left-0 right-0 top-full mt-1 bg-white border border-karu-arena/50 rounded-xl shadow-2xl z-50 overflow-hidden divide-y divide-gray-100">
+                                <div onclick="selectSedeOption('inline', 'Bernal', 'Sede Bernal', '$8.500.000')" class="p-3.5 hover:bg-karu-claro cursor-pointer transition flex items-center justify-between gap-2 group">
+                                    <div>
+                                        <span class="font-bold text-karu-verde block text-sm group-hover:text-karu-verde">Sede Bernal</span>
+                                        <span class="text-[11px] text-gray-500">Belén · Medellín</span>
+                                    </div>
+                                    <span class="inline-flex items-center gap-1.5 bg-karu-verde text-white px-3 py-1.5 rounded-lg shadow-sm group-hover:bg-karu-arena group-hover:text-karu-verde transition">
+                                        <span class="text-[10px] uppercase tracking-wider text-karu-arena group-hover:text-karu-verde font-semibold">Desde</span>
+                                        <span class="font-serif font-bold text-sm md:text-base">$8.500.000</span>
+                                    </span>
+                                </div>
+                                <div onclick="selectSedeOption('inline', 'Balsos', 'Sede Balsos', '$12.300.000')" class="p-3.5 hover:bg-karu-claro cursor-pointer transition flex items-center justify-between gap-2 group">
+                                    <div>
+                                        <span class="font-bold text-karu-verde block text-sm group-hover:text-karu-verde">Sede Balsos</span>
+                                        <span class="text-[11px] text-gray-500">El Poblado · Medellín</span>
+                                    </div>
+                                    <span class="inline-flex items-center gap-1.5 bg-karu-verde text-white px-3 py-1.5 rounded-lg shadow-sm group-hover:bg-karu-arena group-hover:text-karu-verde transition">
+                                        <span class="text-[10px] uppercase tracking-wider text-karu-arena group-hover:text-karu-verde font-semibold">Desde</span>
+                                        <span class="font-serif font-bold text-sm md:text-base">$12.300.000</span>
+                                    </span>
+                                </div>
+                                <div onclick="selectSedeOption('inline', 'Suramerica', 'Sede Suramérica', '$12.800.000')" class="p-3.5 hover:bg-karu-claro cursor-pointer transition flex items-center justify-between gap-2 group">
+                                    <div>
+                                        <span class="font-bold text-karu-verde block text-sm group-hover:text-karu-verde">Sede Suramérica</span>
+                                        <span class="text-[11px] text-gray-500">La Estrella · Sur</span>
+                                    </div>
+                                    <span class="inline-flex items-center gap-1.5 bg-karu-verde text-white px-3 py-1.5 rounded-lg shadow-sm group-hover:bg-karu-arena group-hover:text-karu-verde transition">
+                                        <span class="text-[10px] uppercase tracking-wider text-karu-arena group-hover:text-karu-verde font-semibold">Desde</span>
+                                        <span class="font-serif font-bold text-sm md:text-base">$12.800.000</span>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                         <div class="flex items-start gap-2 pt-2">
                             <input type="checkbox" id="privacy-inline" name="datos" value="Sí" class="mt-0.5 accent-karu-verde" required>
@@ -878,14 +909,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <label class="block text-xs uppercase tracking-wider font-bold mb-2">Teléfono</label>
                     <input type="tel" class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde" placeholder="+57 300 000 0000" name="celular" required>
                 </div>
-                <div>
+                <div class="relative custom-sede-dropdown" data-dropdown="modal">
                     <label class="block text-xs uppercase tracking-wider font-bold mb-2">Sede de interés</label>
-                    <select id="modalSedeSelect" class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde" name="para_quien" required>
-                        <option value="" disabled selected>Selecciona una sede</option>
-                        <option value="Bernal">Bernal — desde $8.500.000</option>
-                        <option value="Balsos">Balsos — desde $12.300.000</option>
-                        <option value="Suramerica">Suramérica — desde $12.800.000</option>
-                    </select>
+                    <input type="text" name="para_quien" required class="sr-only sede-hidden-input" tabindex="-1" autocomplete="off">
+                    <button type="button" onclick="toggleSedeDropdown('modal')" class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde flex items-center justify-between text-left">
+                        <span class="sede-selected-display text-gray-500">Selecciona una sede</span>
+                        <svg class="w-4 h-4 text-karu-verde transition-transform duration-200 sede-chevron shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="sede-dropdown-menu hidden absolute left-0 right-0 top-full mt-1 bg-white border border-karu-arena/50 rounded-xl shadow-2xl z-50 overflow-hidden divide-y divide-gray-100">
+                        <div onclick="selectSedeOption('modal', 'Bernal', 'Sede Bernal', '$8.500.000')" class="p-3.5 hover:bg-karu-claro cursor-pointer transition flex items-center justify-between gap-2 group">
+                            <div>
+                                <span class="font-bold text-karu-verde block text-sm group-hover:text-karu-verde">Sede Bernal</span>
+                                <span class="text-[11px] text-gray-500">Belén · Medellín</span>
+                            </div>
+                            <span class="inline-flex items-center gap-1.5 bg-karu-verde text-white px-3 py-1.5 rounded-lg shadow-sm group-hover:bg-karu-arena group-hover:text-karu-verde transition">
+                                <span class="text-[10px] uppercase tracking-wider text-karu-arena group-hover:text-karu-verde font-semibold">Desde</span>
+                                <span class="font-serif font-bold text-sm md:text-base">$8.500.000</span>
+                            </span>
+                        </div>
+                        <div onclick="selectSedeOption('modal', 'Balsos', 'Sede Balsos', '$12.300.000')" class="p-3.5 hover:bg-karu-claro cursor-pointer transition flex items-center justify-between gap-2 group">
+                            <div>
+                                <span class="font-bold text-karu-verde block text-sm group-hover:text-karu-verde">Sede Balsos</span>
+                                <span class="text-[11px] text-gray-500">El Poblado · Medellín</span>
+                            </div>
+                            <span class="inline-flex items-center gap-1.5 bg-karu-verde text-white px-3 py-1.5 rounded-lg shadow-sm group-hover:bg-karu-arena group-hover:text-karu-verde transition">
+                                <span class="text-[10px] uppercase tracking-wider text-karu-arena group-hover:text-karu-verde font-semibold">Desde</span>
+                                <span class="font-serif font-bold text-sm md:text-base">$12.300.000</span>
+                            </span>
+                        </div>
+                        <div onclick="selectSedeOption('modal', 'Suramerica', 'Sede Suramérica', '$12.800.000')" class="p-3.5 hover:bg-karu-claro cursor-pointer transition flex items-center justify-between gap-2 group">
+                            <div>
+                                <span class="font-bold text-karu-verde block text-sm group-hover:text-karu-verde">Sede Suramérica</span>
+                                <span class="text-[11px] text-gray-500">La Estrella · Sur</span>
+                            </div>
+                            <span class="inline-flex items-center gap-1.5 bg-karu-verde text-white px-3 py-1.5 rounded-lg shadow-sm group-hover:bg-karu-arena group-hover:text-karu-verde transition">
+                                <span class="text-[10px] uppercase tracking-wider text-karu-arena group-hover:text-karu-verde font-semibold">Desde</span>
+                                <span class="font-serif font-bold text-sm md:text-base">$12.800.000</span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 <div class="flex items-start gap-2 pt-2">
                     <input type="checkbox" id="privacy-modal" name="datos" value="Sí" class="mt-0.5 accent-karu-verde" required>
@@ -908,12 +970,59 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
         const modal = document.getElementById('contactModal');
         const modalContent = document.getElementById('modalContent');
-        const modalSedeSelect = document.getElementById('modalSedeSelect');
         const stickyHeader = document.getElementById('stickyProgressHeader');
         const topProgressBar = document.getElementById('topProgressBar');
         const progressCounterText = document.getElementById('progressCounterText');
         const reasonCards = document.querySelectorAll('.reason-card');
         const reasonPills = document.querySelectorAll('[data-reason-nav]');
+
+        const sedeDataMap = {
+            'Bernal': { label: 'Sede Bernal', price: '$8.500.000' },
+            'Balsos': { label: 'Sede Balsos', price: '$12.300.000' },
+            'Suramerica': { label: 'Sede Suramérica', price: '$12.800.000' }
+        };
+
+        function toggleSedeDropdown(type) {
+            const container = document.querySelector(`.custom-sede-dropdown[data-dropdown="${type}"]`);
+            if (!container) return;
+            const menu = container.querySelector('.sede-dropdown-menu');
+            const chevron = container.querySelector('.sede-chevron');
+            menu.classList.toggle('hidden');
+            chevron.classList.toggle('rotate-180');
+        }
+
+        function selectSedeOption(type, value, label, price) {
+            const container = document.querySelector(`.custom-sede-dropdown[data-dropdown="${type}"]`);
+            if (!container) return;
+            const hiddenInput = container.querySelector('.sede-hidden-input');
+            const display = container.querySelector('.sede-selected-display');
+            const menu = container.querySelector('.sede-dropdown-menu');
+            const chevron = container.querySelector('.sede-chevron');
+
+            hiddenInput.value = value;
+            hiddenInput.setCustomValidity('');
+            display.className = 'sede-selected-display flex items-center justify-between w-full pr-2 text-karu-verde';
+            display.innerHTML = `
+                <span class="font-bold text-karu-verde">${label}</span>
+                <span class="inline-flex items-center gap-1.5 bg-karu-arena/25 border border-karu-arena text-karu-verde px-2.5 py-0.5 rounded-md">
+                    <span class="text-[10px] uppercase tracking-wider font-bold">Desde</span>
+                    <span class="font-serif font-bold text-sm">${price}</span>
+                </span>
+            `;
+            menu.classList.add('hidden');
+            chevron.classList.remove('rotate-180');
+        }
+
+        document.addEventListener('click', (e) => {
+            document.querySelectorAll('.custom-sede-dropdown').forEach(container => {
+                if (!container.contains(e.target)) {
+                    const menu = container.querySelector('.sede-dropdown-menu');
+                    const chevron = container.querySelector('.sede-chevron');
+                    if (menu) menu.classList.add('hidden');
+                    if (chevron) chevron.classList.remove('rotate-180');
+                }
+            });
+        });
 
         function openModal(e) {
             if (e) e.preventDefault();
@@ -926,8 +1035,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
 
         function openModalWithSede(sedeValue) {
-            if (modalSedeSelect) {
-                modalSedeSelect.value = sedeValue;
+            if (sedeDataMap[sedeValue]) {
+                selectSedeOption('modal', sedeValue, sedeDataMap[sedeValue].label, sedeDataMap[sedeValue].price);
             }
             openModal();
         }
@@ -1002,6 +1111,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         forms.forEach(form => {
             form.addEventListener('submit', e => {
                 e.preventDefault();
+
+                const hiddenSede = form.querySelector('.sede-hidden-input');
+                if (hiddenSede && !hiddenSede.value) {
+                    const dropdownContainer = form.querySelector('.custom-sede-dropdown');
+                    if (dropdownContainer) {
+                        const menu = dropdownContainer.querySelector('.sede-dropdown-menu');
+                        if (menu) menu.classList.remove('hidden');
+                    }
+                    return;
+                }
                 
                 const btn = form.querySelector('button[type="submit"]');
                 const originalText = btn.innerHTML;
