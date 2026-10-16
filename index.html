@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Razones para Elegir Hábitat Senior Living en Medellín | Cuidado de Lujo</title>
+    <meta name="description" content="¿Comparando residencias para el adulto mayor en Medellín? Descubre las 10 razones por las que Hábitat Senior Living es la elección ideal en bienestar, lujo y cuidado 24/7.">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        karu: {
+                            verde: '#2C3E2D',  /* Primary: Dark Green */
+                            arena: '#D4A843',  /* Secondary: Gold */
+                            claro: '#FAF6ED',  /* Background Light */
+                            marfil: '#ffffff', /* White */
+                            piedra: '#5e6b7e'  /* Muted Text */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            height: auto;
+        }
+        @media (min-width: 768px) {
+            .hero-content {
+                min-height: 100vh;
+            }
+        }
+
+        /* Animación progresiva para las 10 razones */
+        .reason-card {
+            opacity: 0;
+            transform: translateY(36px);
+            transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reason-card.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Línea conectora vertical progresiva */
+        .timeline-track {
+            background: linear-gradient(to bottom, #D4A843 var(--scroll-progress, 10%), rgba(44, 62, 45, 0.15) var(--scroll-progress, 10%));
+        }
+
+        /* Píldora activa del navegador de razones */
+        .reason-pill.active {
+            background-color: #2C3E2D;
+            color: #FAF6ED;
+            border-color: #D4A843;
+        }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WFSQ859');</script>
+    <!-- End Google Tag Manager -->
+
+    <link rel="icon" type="image/png" href="habitat_favicon.png">
+</head>
+<body class="font-sans text-gray-800 bg-karu-claro antialiased flex flex-col min-h-screen">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFSQ859"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- Barra superior fija de progreso de lectura de las 10 razones -->
+    <div id="stickyProgressHeader" class="fixed top-0 left-0 right-0 z-50 bg-karu-verde/95 backdrop-blur-md text-white border-b border-white/10 transform -translate-y-full transition-transform duration-300 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-3 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+                <img src="habitat_logo.png" alt="Hábitat Senior Living" class="h-7 object-contain" style="filter: brightness(0) invert(1);">
+                <div class="hidden sm:flex items-center gap-2 text-xs md:text-sm border-l border-white/20 pl-4">
+                    <span class="text-karu-arena font-serif italic text-base" id="progressCounterText">Razón 1 de 10</span>
+                    <span class="text-gray-300 hidden md:inline">— Descubre por qué somos la residencia #1 en Medellín</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="#formulario-principal" class="inline-flex items-center gap-2 bg-karu-arena text-karu-verde font-bold px-4 py-2 rounded-sm uppercase tracking-wider text-xs hover:bg-white transition duration-300">
+                    Dejar mis datos
+                </a>
+                <a href="https://wa.me/573206872012?text=Hola,%20estoy%20comparando%20opciones%20de%20Senior%20Living%20en%20Medell%C3%ADn%20y%20quisiera%20informaci%C3%B3n%20sobre%20H%C3%A1bitat" target="_blank" class="hidden md:inline-flex items-center gap-2 bg-[#7fd77f] text-white font-bold px-4 py-2 rounded-sm uppercase tracking-wider text-xs hover:bg-[#68c668] transition duration-300">
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+        <!-- Barra de progreso dorada -->
+        <div class="w-full h-1 bg-white/10">
+            <div id="topProgressBar" class="h-full bg-karu-arena transition-all duration-300" style="width: 10%;"></div>
+        </div>
+    </div>
+
+    <!-- 1. Hero Section + Formulario Inicial Rápido / Comparativo -->
+    <header class="relative md:min-h-screen flex flex-col md:block">
+        <!-- Video de fondo -->
+        <div class="relative md:absolute md:top-0 md:right-0 w-full md:w-[52%] h-[45vh] md:h-full overflow-hidden order-2 md:order-none z-0">
+            <video autoplay loop muted playsinline class="w-full h-full object-cover">
+                <source src="https://seniorliving.servicios-habitat.com/habitat_gallery/hero_video.mp4" type="video/mp4">
+            </video>
+            <!-- Sutil gradiente para integrar con el panel izquierdo y tarjeta flotante -->
+            <div class="hidden md:block absolute inset-0 bg-gradient-to-r from-karu-verde via-transparent to-black/30"></div>
+            
+            <!-- Badge flotante sobre el video en Desktop -->
+            <div class="hidden lg:flex absolute bottom-10 right-10 bg-karu-verde/90 backdrop-blur-md border border-karu-arena/40 text-white p-6 max-w-sm shadow-2xl items-start gap-4">
+                <div class="text-3xl font-serif text-karu-arena font-bold leading-none">+15</div>
+                <div>
+                    <p class="text-xs uppercase tracking-widest text-karu-arena font-semibold mb-1">Años de experiencia</p>
+                    <p class="text-xs text-gray-200 leading-relaxed">Antes de tomar una decisión para tu familiar, compara el estándar de cuidado clínico y calidez humana de Hábitat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-content flex relative order-1 md:order-none w-full">
+            <!-- Left panel -->
+            <div class="w-full md:w-[48%] min-h-full bg-karu-verde border-b md:border-r border-white/20 flex flex-col justify-center items-center text-center md:items-start md:text-left px-8 py-14 md:px-14 lg:px-20 md:py-20">
+                <!-- Logo -->
+                <div class="mb-6 md:mb-8">
+                    <img src="habitat_logo.png" alt="Hábitat Suramérica" class="h-10 md:h-14 object-contain opacity-100" style="filter: brightness(0) invert(1);">
+                </div>
+                
+                <!-- Tag/Label enfocado en búsqueda comparativa -->
+                <div class="border border-karu-arena/40 bg-black/20 text-karu-arena text-xs md:text-sm py-2 px-5 mb-6 rounded-sm tracking-widest font-serif uppercase">
+                    ¿Buscando la mejor residencia en Medellín?
+                </div>
+
+                <!-- Title -->
+                <h1 class="text-3xl md:text-4xl lg:text-[2.75rem] font-serif text-white mb-6 leading-[1.18]">
+                    10 razones para elegir a Hábitat como <span class="text-karu-arena italic font-light">la residencia ideal</span> para el adulto mayor
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-gray-200 text-base md:text-lg font-light leading-relaxed mb-8 max-w-xl">
+                    Sabemos que estás comparando opciones para quien más amas. Descubre paso a paso qué diferencia a <strong class="text-white font-medium">Hábitat Senior Living</strong> de cualquier otro hogar o residencia en Medellín.
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                    <a href="#razones-habitat" class="inline-flex justify-center items-center gap-3 bg-karu-arena text-karu-verde px-7 py-4 rounded-sm uppercase tracking-wider text-xs md:text-sm font-bold hover:bg-white transition duration-300 shadow-lg">
+                        <span>Ver las 10 razones</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </a>
+                    <a href="#formulario-principal" class="inline-flex justify-center items-center gap-3 border border-white/40 bg-white/10 text-white px-7 py-4 rounded-sm uppercase tracking-wider text-xs md:text-sm font-semibold hover:bg-white hover:text-karu-verde transition duration-300">
+                        Solicitar Información
+                    </a>
+                </div>
+
+                <!-- Mini trust bar -->
+                <div class="mt-10 pt-8 border-t border-white/15 grid grid-cols-3 gap-6 w-full text-left">
+                    <div>
+                        <div class="text-xl md:text-2xl font-serif text-karu-arena">3 Sedes</div>
+                        <div class="text-[11px] uppercase tracking-wider text-gray-300">Balsos · Bernal · Suramérica</div>
+                    </div>
+                    <div>
+                        <div class="text-xl md:text-2xl font-serif text-karu-arena">24/7</div>
+                        <div class="text-[11px] uppercase tracking-wider text-gray-300">Enfermería y Asistencia</div>
+                    </div>
+                    <div>
+                        <div class="text-xl md:text-2xl font-serif text-karu-arena">+15 Años</div>
+                        <div class="text-[11px] uppercase tracking-wider text-gray-300">Líderes en Senior Living</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right panel spacer -->
+            <div class="hidden md:block md:w-[52%] h-full"></div>
+        </div>
+    </header>
+
+    <!-- Intro Comparativa / Frase Destacada -->
+    <section class="bg-karu-claro pt-16 pb-10 md:pt-24 md:pb-12 px-6 text-center relative z-20">
+        <div class="max-w-4xl mx-auto flex flex-col items-center">
+            <span class="text-xs font-bold uppercase tracking-[0.25em] text-karu-arena mb-3">Toma una decisión informada</span>
+            <p class="font-serif italic text-2xl md:text-4xl text-karu-verde font-light leading-[1.4] mb-6">
+                “Cuando comparas opciones para el cuidado de tus padres o familiares, los pequeños detalles hacen toda la diferencia entre una residencia convencional y un verdadero hogar de lujo.”
+            </p>
+            <div class="w-20 h-1 bg-karu-arena mx-auto mb-8"></div>
+            <p class="text-gray-600 max-w-2xl text-base md:text-lg">
+                Recorre una a una las <strong>10 razones</strong> por las que las familias más exigentes de Medellín y el exterior eligen a Hábitat.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PRINCIPAL: LAS 10 RAZONES PROGRESIVAS -->
+    <section id="razones-habitat" class="py-12 md:py-20 px-4 sm:px-6 bg-karu-claro relative z-20">
+        <div class="max-w-6xl mx-auto">
+
+            <!-- Navegador interactivo rápido de las 10 razones -->
+            <div class="bg-white p-4 md:p-6 rounded-xl shadow-md border border-karu-arena/20 mb-14 sticky top-16 z-30">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold uppercase tracking-widest text-karu-verde">Recorrido de las 10 Razones:</span>
+                        <span id="unlockedBadge" class="text-xs font-semibold text-karu-arena md:hidden">Haz clic o baja para descubrirlas</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 md:gap-2 overflow-x-auto pb-1 md:pb-0 no-scrollbar">
+                        <a href="#razon-1" data-reason-nav="1" class="reason-pill active shrink-0 w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-xs font-serif font-bold text-karu-verde hover:border-karu-arena transition">01</a>
+                        <a href="#razon-2" data-reason-nav="2" class="reason-pill shrink-0 w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-xs font-serif font-bold text-karu-verde hover:border-karu-arena transition">02</a>
+                        <a href="#razon-3" data-reason-nav="3" class="reason-pill shrink-0 w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-xs font-serif font-bold text-karu-verde hover:border-karu-arena transition">03</a>
+                        <a href="#razon-4" data-reason-nav="4" class="reason-pill shrink-0 w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-xs font-serif font-bold text-karu-verde hover:border-karu-arena transition">04</a>
+                        <a href="#razon-5" data-reason-nav="5" class="reason-pill shrink-0 w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-xs font-serif font-bold text-karu-verde hover:border-karu-arena transition">05</a>
+                        <a href="#razon-6" data-reason-nav="6" class="reason-pill shrink-0 w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-xs font-serif font-bold text-karu-verde hover:border-karu-arena transition">06</a>
+                        <a href="#razon-7" data-reason-nav="7" class="reason-pill shrink-0 w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-xs font-serif font-bold text-karu-verde hover:border-karu-arena transition">07</a>
+                        <a href="#razon-8" data-reason-nav="8" class="reason-pill shrink-0 w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-xs font-serif font-bold text-karu-verde hover:border-karu-arena transition">08</a>
+                        <a href="#razon-9" data-reason-nav="9" class="reason-pill shrink-0 w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-xs font-serif font-bold text-karu-verde hover:border-karu-arena transition">09</a>
+                        <a href="#razon-10" data-reason-nav="10" class="reason-pill shrink-0 w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-xs font-serif font-bold text-karu-verde hover:border-karu-arena transition">10</a>
+                    </div>
+                    <a href="#formulario-principal" class="hidden lg:inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-karu-verde hover:text-karu-arena transition shrink-0">
+                        <span>Cotizar ahora</span>
+                        <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contenedor de las 10 Razones -->
+            <div class="space-y-12 md:space-y-16 relative">
+
+                <!-- RAZÓN 01 -->
+                <article id="razon-1" data-reason="1" class="reason-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 grid grid-cols-1 lg:grid-cols-12">
+                    <div class="lg:col-span-5 relative min-h-[280px] lg:min-h-full">
+                        <img src="https://seniorliving.servicios-habitat.com/habitat_gallery/_MER0361.webp" alt="Atención médica y enfermería 24/7 en Hábitat" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-karu-verde text-karu-arena font-serif text-2xl md:text-3xl px-4 py-2 rounded-sm shadow-md">
+                            Razón 01 <span class="text-xs font-sans text-white/70 uppercase tracking-widest block">de 10</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7 p-8 md:p-12 flex flex-col justify-center">
+                        <span class="text-xs font-bold uppercase tracking-[0.2em] text-karu-arena mb-2">Seguridad Clínica y Humana</span>
+                        <h3 class="text-2xl md:text-4xl font-serif text-karu-verde mb-4 leading-tight">
+                            Enfermería 24/7 y un equipo multidisciplinario permanente
+                        </h3>
+                        <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+                            Mientras que otros lugares ofrecen supervisión básica por turnos, en <strong>Hábitat Senior Living</strong> contamos con cuidado de enfermería las 24 horas del día y el acompañamiento continuo de especialistas en medicina, neuropsicología, fisioterapia, nutrición y trabajo social.
+                        </p>
+                        <div class="bg-karu-claro p-4 rounded-lg border-l-4 border-karu-arena mb-6">
+                            <p class="text-xs uppercase tracking-wider font-bold text-karu-verde mb-1">La diferencia Hábitat:</p>
+                            <p class="text-sm text-gray-700">Respuesta inmediata, control riguroso de medicamentos y planes de cuidado individualizados para la tranquilidad absoluta de tu familia.</p>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-gray-100">
+                            <a href="#razon-2" class="text-xs font-bold uppercase tracking-widest text-karu-verde hover:text-karu-arena transition flex items-center gap-2">
+                                Ver Razón 02 &darr;
+                            </a>
+                            <button onclick="openModalWithContext('Interés desde Razón 01 - Enfermería 24/7')" class="text-xs font-bold uppercase tracking-widest bg-karu-verde text-white px-5 py-2.5 rounded-sm hover:bg-karu-arena transition">
+                                Consultar por cuidado asistido
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- RAZÓN 02 -->
+                <article id="razon-2" data-reason="2" class="reason-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 grid grid-cols-1 lg:grid-cols-12">
+                    <div class="lg:col-span-7 p-8 md:p-12 flex flex-col justify-center order-2 lg:order-1">
+                        <span class="text-xs font-bold uppercase tracking-[0.2em] text-karu-arena mb-2">Trayectoria Comprobada</span>
+                        <h3 class="text-2xl md:text-4xl font-serif text-karu-verde mb-4 leading-tight">
+                            Más de 15 años de experiencia liderando el Senior Living en Medellín
+                        </h3>
+                        <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+                            El bienestar de un adulto mayor no admite improvisaciones. Durante más de una década y media hemos perfeccionado cada protocolo de hospitalidad, salud y acompañamiento, convirtiéndonos en la institución de mayor confianza para familias en Colombia y el exterior.
+                        </p>
+                        <div class="bg-karu-claro p-4 rounded-lg border-l-4 border-karu-arena mb-6">
+                            <p class="text-xs uppercase tracking-wider font-bold text-karu-verde mb-1">La diferencia Hábitat:</p>
+                            <p class="text-sm text-gray-700">Respaldo institucional sólido, procesos certificados y cientos de historias de vida que avalan nuestra excelencia.</p>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-gray-100">
+                            <a href="#razon-3" class="text-xs font-bold uppercase tracking-widest text-karu-verde hover:text-karu-arena transition flex items-center gap-2">
+                                Ver Razón 03 &darr;
+                            </a>
+                            <a href="#formulario-principal" class="text-xs font-bold uppercase tracking-widest bg-karu-verde text-white px-5 py-2.5 rounded-sm hover:bg-karu-arena transition">
+                                Hablar con un asesor
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 relative min-h-[280px] lg:min-h-full order-1 lg:order-2">
+                        <img src="https://seniorliving.servicios-habitat.com/habitat_gallery/20260210-DEV-GOOGLE-IMAGE-ADS-ENTORNODETALLES idea 6.webp" alt="Experiencia y respaldo Hábitat" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-karu-verde text-karu-arena font-serif text-2xl md:text-3xl px-4 py-2 rounded-sm shadow-md text-right">
+                            Razón 02 <span class="text-xs font-sans text-white/70 uppercase tracking-widest block">de 10</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- RAZÓN 03 -->
+                <article id="razon-3" data-reason="3" class="reason-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 grid grid-cols-1 lg:grid-cols-12">
+                    <div class="lg:col-span-5 relative min-h-[280px] lg:min-h-full">
+                        <img src="https://seniorliving.servicios-habitat.com/habitat_gallery/piscina.webp" alt="Piscina y estilo de vida tipo club en Hábitat" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-karu-verde text-karu-arena font-serif text-2xl md:text-3xl px-4 py-2 rounded-sm shadow-md">
+                            Razón 03 <span class="text-xs font-sans text-white/70 uppercase tracking-widest block">de 10</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7 p-8 md:p-12 flex flex-col justify-center">
+                        <span class="text-xs font-bold uppercase tracking-[0.2em] text-karu-arena mb-2">Infraestructura de Lujo</span>
+                        <h3 class="text-2xl md:text-4xl font-serif text-karu-verde mb-4 leading-tight">
+                            Un ambiente tipo Club y Hotel Boutique, nunca un ambiente clínico
+                        </h3>
+                        <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+                            Olvídate de los espacios fríos o institucionales. Nuestras sedes cuentan con <strong>piscina climatizada, gimnasio adaptado, peluquería, salones de juegos, jardines exuberantes y terrazas soleadas</strong> pensadas para el disfrute diario.
+                        </p>
+                        <div class="bg-karu-claro p-4 rounded-lg border-l-4 border-karu-arena mb-6">
+                            <p class="text-xs uppercase tracking-wider font-bold text-karu-verde mb-1">La diferencia Hábitat:</p>
+                            <p class="text-sm text-gray-700">Arquitectura cálida, accesible y luminosa donde el residente se siente orgulloso de vivir y recibir a sus nietos y amigos.</p>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-gray-100">
+                            <a href="#razon-4" class="text-xs font-bold uppercase tracking-widest text-karu-verde hover:text-karu-arena transition flex items-center gap-2">
+                                Ver Razón 04 &darr;
+                            </a>
+                            <button onclick="openModalWithContext('Interés desde Razón 03 - Agendar visita a instalaciones')" class="text-xs font-bold uppercase tracking-widest bg-karu-verde text-white px-5 py-2.5 rounded-sm hover:bg-karu-arena transition">
+                                Agendar visita guiada
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- RAZÓN 04 -->
+                <article id="razon-4" data-reason="4" class="reason-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 grid grid-cols-1 lg:grid-cols-12">
+                    <div class="lg:col-span-7 p-8 md:p-12 flex flex-col justify-center order-2 lg:order-1">
+                        <span class="text-xs font-bold uppercase tracking-[0.2em] text-karu-arena mb-2">Ubicación Privilegiada</span>
+                        <h3 class="text-2xl md:text-4xl font-serif text-karu-verde mb-4 leading-tight">
+                            3 sedes estratégicas en Medellín para estar siempre cerca de tu familia
+                        </h3>
+                        <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+                            A diferencia de residencias alejadas fuera de la ciudad donde visitar a tu familiar toma horas, en Hábitat puedes elegir entre tres ubicaciones exclusivas dentro del área metropolitana: <strong>Los Balsos (El Poblado)</strong>, <strong>Los Bernal (Belén)</strong> y <strong>Suramérica (La Estrella)</strong>.
+                        </p>
+                        <div class="grid grid-cols-3 gap-3 mb-6 text-center">
+                            <div class="bg-karu-claro p-3 rounded-lg">
+                                <div class="font-serif font-bold text-karu-verde text-sm">Los Bernal</div>
+                                <div class="text-[11px] text-gray-500">Belén · Medellín</div>
+                            </div>
+                            <div class="bg-karu-claro p-3 rounded-lg">
+                                <div class="font-serif font-bold text-karu-verde text-sm">Los Balsos</div>
+                                <div class="text-[11px] text-gray-500">El Poblado · Medellín</div>
+                            </div>
+                            <div class="bg-karu-claro p-3 rounded-lg">
+                                <div class="font-serif font-bold text-karu-verde text-sm">Suramérica</div>
+                                <div class="text-[11px] text-gray-500">Sur del Valle de Aburrá</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-gray-100">
+                            <a href="#razon-5" class="text-xs font-bold uppercase tracking-widest text-karu-verde hover:text-karu-arena transition flex items-center gap-2">
+                                Ver Razón 05 &darr;
+                            </a>
+                            <a href="#sedes-section" class="text-xs font-bold uppercase tracking-widest bg-karu-verde text-white px-5 py-2.5 rounded-sm hover:bg-karu-arena transition">
+                                Comparar las 3 sedes
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 relative min-h-[280px] lg:min-h-full order-1 lg:order-2">
+                        <img src="https://seniorliving.servicios-habitat.com/habitat_gallery/_LEU4760.webp" alt="Sedes campestres y urbanas en Medellín" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-karu-verde text-karu-arena font-serif text-2xl md:text-3xl px-4 py-2 rounded-sm shadow-md text-right">
+                            Razón 04 <span class="text-xs font-sans text-white/70 uppercase tracking-widest block">de 10</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- RAZÓN 05 -->
+                <article id="razon-5" data-reason="5" class="reason-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 grid grid-cols-1 lg:grid-cols-12">
+                    <div class="lg:col-span-5 relative min-h-[280px] lg:min-h-full">
+                        <img src="https://seniorliving.servicios-habitat.com/habitat_gallery/espacios.webp" alt="Habitaciones personalizadas en Hábitat" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-karu-verde text-karu-arena font-serif text-2xl md:text-3xl px-4 py-2 rounded-sm shadow-md">
+                            Razón 05 <span class="text-xs font-sans text-white/70 uppercase tracking-widest block">de 10</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7 p-8 md:p-12 flex flex-col justify-center">
+                        <span class="text-xs font-bold uppercase tracking-[0.2em] text-karu-arena mb-2">Identidad y Pertenencia</span>
+                        <h3 class="text-2xl md:text-4xl font-serif text-karu-verde mb-4 leading-tight">
+                            Vives con tus propias pertenencias, recuerdos y total privacidad
+                        </h3>
+                        <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+                            En Hábitat promovemos que cada residente adapte su espacio con sus muebles favoritos, cuadros, fotografías y objetos personales. No es adaptarse a una habitación genérica, sino continuar su historia de vida en un entorno seguro y acogedor.
+                        </p>
+                        <div class="bg-karu-claro p-4 rounded-lg border-l-4 border-karu-arena mb-6">
+                            <p class="text-xs uppercase tracking-wider font-bold text-karu-verde mb-1">La diferencia Hábitat:</p>
+                            <p class="text-sm text-gray-700">Respeto absoluto por la autonomía, intimidad y rutinas personales de cada residente.</p>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-gray-100">
+                            <a href="#razon-6" onclick="unlockRemainingReasons()" class="text-xs font-bold uppercase tracking-widest text-karu-verde hover:text-karu-arena transition flex items-center gap-2">
+                                Continuar a la Razón 06 &darr;
+                            </a>
+                            <button onclick="openModalWithContext('Interés desde Razón 05 - Espacios privados')" class="text-xs font-bold uppercase tracking-widest bg-karu-verde text-white px-5 py-2.5 rounded-sm hover:bg-karu-arena transition">
+                                Solicitar cotización
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PAUSA INTERACTIVA A MITAD DE CAMINO (INVITACIÓN A DEJAR DATOS + BOTÓN PARA VER RAZONES 6 A 10) -->
+                <div class="bg-karu-verde text-white rounded-2xl p-8 md:p-12 shadow-2xl border border-karu-arena/40 relative overflow-hidden">
+                    <div class="max-w-4xl mx-auto text-center relative z-10">
+                        <span class="inline-block border border-karu-arena/40 bg-black/20 text-karu-arena text-xs uppercase tracking-widest px-4 py-1.5 rounded-sm mb-4 font-serif">
+                            Has descubierto 5 de las 10 razones
+                        </span>
+                        <h3 class="text-2xl md:text-4xl font-serif mb-4 leading-snug">
+                            ¿Quieres conocer disponibilidad y tarifas para tu familiar <span class="text-karu-arena italic">mientras sigues leyendo</span>?
+                        </h3>
+                        <p class="text-gray-200 text-sm md:text-base mb-8 max-w-2xl mx-auto">
+                            Déjanos tus datos en menos de 30 segundos para que un especialista de Hábitat te envíe el portafolio detallado de nuestras 3 sedes, o desbloquea ahora mismo las siguientes 5 razones.
+                        </p>
+                        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                            <a href="#formulario-principal" class="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-karu-arena text-karu-verde font-bold px-8 py-4 rounded-sm uppercase tracking-widest text-xs md:text-sm hover:bg-white transition duration-300 shadow-lg">
+                                Sí, quiero recibir precios e información
+                            </a>
+                            <button id="btnRevealMore" onclick="unlockRemainingReasons(true)" class="w-full sm:w-auto inline-flex justify-center items-center gap-2 border border-white/40 bg-white/10 text-white font-semibold px-8 py-4 rounded-sm uppercase tracking-widest text-xs md:text-sm hover:bg-white hover:text-karu-verde transition duration-300">
+                                <span>Descubrir Razones 06 a 10</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOQUE PROGRESIVO 2: RAZONES 06 A 10 -->
+                <div id="secondHalfReasons" class="space-y-12 md:space-y-16 transition-all duration-700">
+
+                    <!-- RAZÓN 06 -->
+                    <article id="razon-6" data-reason="6" class="reason-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 grid grid-cols-1 lg:grid-cols-12">
+                        <div class="lg:col-span-7 p-8 md:p-12 flex flex-col justify-center order-2 lg:order-1">
+                            <span class="text-xs font-bold uppercase tracking-[0.2em] text-karu-arena mb-2">Gastronomía y Salud</span>
+                            <h3 class="text-2xl md:text-4xl font-serif text-karu-verde mb-4 leading-tight">
+                                Alimentación gourmet diseñada por nutricionistas clínicos
+                            </h3>
+                            <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+                                Comer bien es uno de los mayores placeres de la vida. En Hábitat cada menú diario combina alta cocina casera con los requerimientos nutricionales específicos de cada adulto mayor (dietas hiposódicas, para diabéticos, texturas modificadas o preferencias personales).
+                            </p>
+                            <div class="bg-karu-claro p-4 rounded-lg border-l-4 border-karu-arena mb-6">
+                                <p class="text-xs uppercase tracking-wider font-bold text-karu-verde mb-1">La diferencia Hábitat:</p>
+                                <p class="text-sm text-gray-700">5 tiempos de alimentación balanceada servidos en comedores llenos de luz natural y calidez social.</p>
+                            </div>
+                            <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-gray-100">
+                                <a href="#razon-7" class="text-xs font-bold uppercase tracking-widest text-karu-verde hover:text-karu-arena transition flex items-center gap-2">
+                                    Ver Razón 07 &darr;
+                                </a>
+                                <button onclick="openModalWithContext('Interés desde Razón 06 - Nutrición y Gastronomía')" class="text-xs font-bold uppercase tracking-widest bg-karu-verde text-white px-5 py-2.5 rounded-sm hover:bg-karu-arena transition">
+                                    Solicitar Información
+                                </button>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 relative min-h-[280px] lg:min-h-full order-1 lg:order-2">
+                            <img src="https://seniorliving.servicios-habitat.com/habitat_gallery/comedor.webp" alt="Comedor gourmet en Hábitat Senior Living" class="w-full h-full object-cover">
+                            <div class="absolute top-4 right-4 bg-karu-verde text-karu-arena font-serif text-2xl md:text-3xl px-4 py-2 rounded-sm shadow-md text-right">
+                                Razón 06 <span class="text-xs font-sans text-white/70 uppercase tracking-widest block">de 10</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- RAZÓN 07 -->
+                    <article id="razon-7" data-reason="7" class="reason-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 grid grid-cols-1 lg:grid-cols-12">
+                        <div class="lg:col-span-5 relative min-h-[280px] lg:min-h-full">
+                            <img src="https://seniorliving.servicios-habitat.com/habitat_gallery/Juegos.webp" alt="Actividades cognitivas y sociales diarias" class="w-full h-full object-cover">
+                            <div class="absolute top-4 left-4 bg-karu-verde text-karu-arena font-serif text-2xl md:text-3xl px-4 py-2 rounded-sm shadow-md">
+                                Razón 07 <span class="text-xs font-sans text-white/70 uppercase tracking-widest block">de 10</span>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 p-8 md:p-12 flex flex-col justify-center">
+                            <span class="text-xs font-bold uppercase tracking-[0.2em] text-karu-arena mb-2">Vitalidad y Comunidad</span>
+                            <h3 class="text-2xl md:text-4xl font-serif text-karu-verde mb-4 leading-tight">
+                                Agenda diaria de estimulación cognitiva, física y social
+                            </h3>
+                            <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+                                La soledad y el sedentarismo aceleran el deterioro en el adulto mayor. En Hábitat todos los días hay vida: talleres de memoria, música en vivo, arte, hidroterapia, gimnasio guiado, tardes de juego y celebraciones que crean verdaderas amistades entre residentes.
+                            </p>
+                            <div class="bg-karu-claro p-4 rounded-lg border-l-4 border-karu-arena mb-6">
+                                <p class="text-xs uppercase tracking-wider font-bold text-karu-verde mb-1">La diferencia Hábitat:</p>
+                                <p class="text-sm text-gray-700">Programas dirigidos por profesionales para mantener la mente activa, el cuerpo en movimiento y el corazón alegre.</p>
+                            </div>
+                            <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-gray-100">
+                                <a href="#razon-8" class="text-xs font-bold uppercase tracking-widest text-karu-verde hover:text-karu-arena transition flex items-center gap-2">
+                                    Ver Razón 08 &darr;
+                                </a>
+                                <button onclick="openModalWithContext('Interés desde Razón 07 - Actividades y Bienestar')" class="text-xs font-bold uppercase tracking-widest bg-karu-verde text-white px-5 py-2.5 rounded-sm hover:bg-karu-arena transition">
+                                    Conocer planes
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- RAZÓN 08 -->
+                    <article id="razon-8" data-reason="8" class="reason-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 grid grid-cols-1 lg:grid-cols-12">
+                        <div class="lg:col-span-7 p-8 md:p-12 flex flex-col justify-center order-2 lg:order-1">
+                            <span class="text-xs font-bold uppercase tracking-[0.2em] text-karu-arena mb-2">Flexibilidad Total</span>
+                            <h3 class="text-2xl md:text-4xl font-serif text-karu-verde mb-4 leading-tight">
+                                4 modalidades de estancia que se adaptan a cada necesidad
+                            </h3>
+                            <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+                                No todos los adultos mayores requieren el mismo tipo de apoyo. Por eso ofrecemos desde <strong>Vivienda Independiente</strong> para seniors autónomos y <strong>Vivienda Asistida 24/7</strong>, hasta <strong>Vivienda Temporal</strong> (por semanas o meses cuando la familia viaja) y <strong>Cuidados Postoperatorios</strong>.
+                            </p>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-6">
+                                <div class="bg-karu-verde text-white p-3 rounded text-center text-xs font-semibold uppercase tracking-wider">Vivienda Independiente</div>
+                                <div class="bg-karu-verde text-white p-3 rounded text-center text-xs font-semibold uppercase tracking-wider">Vivienda Asistida</div>
+                                <div class="bg-karu-verde text-white p-3 rounded text-center text-xs font-semibold uppercase tracking-wider">Estancia Temporal</div>
+                                <div class="bg-karu-verde text-white p-3 rounded text-center text-xs font-semibold uppercase tracking-wider">Cuidado Postoperatorio</div>
+                            </div>
+                            <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-gray-100">
+                                <a href="#razon-9" class="text-xs font-bold uppercase tracking-widest text-karu-verde hover:text-karu-arena transition flex items-center gap-2">
+                                    Ver Razón 09 &darr;
+                                </a>
+                                <button onclick="openModalWithContext('Interés desde Razón 08 - Modalidades de estancia')" class="text-xs font-bold uppercase tracking-widest bg-karu-verde text-white px-5 py-2.5 rounded-sm hover:bg-karu-arena transition">
+                                    Consultar modalidad ideal
+                                </button>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 relative min-h-[280px] lg:min-h-full order-1 lg:order-2">
+                            <img src="https://seniorliving.servicios-habitat.com/habitat_gallery/Gym.webp" alt="Fisioterapia y rehabilitación en Hábitat" class="w-full h-full object-cover">
+                            <div class="absolute top-4 right-4 bg-karu-verde text-karu-arena font-serif text-2xl md:text-3xl px-4 py-2 rounded-sm shadow-md text-right">
+                                Razón 08 <span class="text-xs font-sans text-white/70 uppercase tracking-widest block">de 10</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- RAZÓN 09 -->
+                    <article id="razon-9" data-reason="9" class="reason-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 grid grid-cols-1 lg:grid-cols-12">
+                        <div class="lg:col-span-5 relative min-h-[280px] lg:min-h-full">
+                            <img src="https://seniorliving.servicios-habitat.com/habitat_gallery/peluqueria.webp" alt="Servicios integrales incluidos en Hábitat" class="w-full h-full object-cover">
+                            <div class="absolute top-4 left-4 bg-karu-verde text-karu-arena font-serif text-2xl md:text-3xl px-4 py-2 rounded-sm shadow-md">
+                                Razón 09 <span class="text-xs font-sans text-white/70 uppercase tracking-widest block">de 10</span>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 p-8 md:p-12 flex flex-col justify-center">
+                            <span class="text-xs font-bold uppercase tracking-[0.2em] text-karu-arena mb-2">Transparencia y Valor Integral</span>
+                            <h3 class="text-2xl md:text-4xl font-serif text-karu-verde mb-4 leading-tight">
+                                Tarifas claras todo incluido desde $8.500.000 COP
+                            </h3>
+                            <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+                                Cuando sumas el costo de enfermería privada en casa, alimentación especializada, terapias, adecuaciones y servicios públicos, Hábitat ofrece una relación costo-beneficio insuperable con planes transparentes en pesos, dólares o euros.
+                            </p>
+                            <div class="grid grid-cols-3 gap-3 mb-6 bg-karu-claro p-4 rounded-xl text-center">
+                                <div>
+                                    <div class="text-[11px] font-bold text-karu-verde uppercase">COP</div>
+                                    <div class="font-serif font-bold text-lg md:text-xl text-karu-verde">$8.500.000*</div>
+                                </div>
+                                <div class="border-x border-gray-300">
+                                    <div class="text-[11px] font-bold text-karu-verde uppercase">USD</div>
+                                    <div class="font-serif font-bold text-lg md:text-xl text-karu-verde">USD 2,550</div>
+                                </div>
+                                <div>
+                                    <div class="text-[11px] font-bold text-karu-verde uppercase">EUR</div>
+                                    <div class="font-serif font-bold text-lg md:text-xl text-karu-verde">€ 2.244</div>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-gray-100">
+                                <a href="#razon-10" class="text-xs font-bold uppercase tracking-widest text-karu-verde hover:text-karu-arena transition flex items-center gap-2">
+                                    Ver Razón 10 &darr;
+                                </a>
+                                <a href="#formulario-principal" class="text-xs font-bold uppercase tracking-widest bg-karu-verde text-white px-5 py-2.5 rounded-sm hover:bg-karu-arena transition">
+                                    Recibir cotización detallada
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- RAZÓN 10 -->
+                    <article id="razon-10" data-reason="10" class="reason-card bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-karu-arena grid grid-cols-1 lg:grid-cols-12">
+                        <div class="lg:col-span-7 p-8 md:p-12 flex flex-col justify-center order-2 lg:order-1">
+                            <span class="text-xs font-bold uppercase tracking-[0.2em] text-karu-arena mb-2">La Razón Definitiva</span>
+                            <h3 class="text-2xl md:text-4xl font-serif text-karu-verde mb-4 leading-tight">
+                                Puertas abiertas, calidez humana y familias que viven en paz
+                            </h3>
+                            <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+                                La mejor prueba de nuestra calidad es la sonrisa de nuestros residentes y la tranquilidad de sus hijos. Te invitamos a visitarnos personalmente o por videollamada, recorrer nuestras sedes y comprobar por qué, después de conocer <strong>Hábitat</strong>, las familias saben que encontraron el lugar correcto.
+                            </p>
+                            <div class="bg-karu-claro p-4 rounded-lg border-l-4 border-karu-verde mb-6">
+                                <p class="text-sm italic font-serif text-karu-verde">
+                                    “¡Has completado las 10 razones! Da el siguiente paso y permítenos asesorarte sin ningún compromiso.”
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-4 pt-2">
+                                <a href="#formulario-principal" class="inline-flex items-center gap-2 bg-karu-verde text-white font-bold px-8 py-4 rounded-sm uppercase tracking-widest text-xs md:text-sm hover:bg-karu-arena transition duration-300 shadow-lg">
+                                    Dejar mis datos ahora
+                                </a>
+                                <a href="https://wa.me/573206872012?text=Hola,%20acabo%20de%20ver%20las%2010%20razones%20para%20elegir%20H%C3%A1bitat%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="inline-flex items-center gap-2 bg-[#7fd77f] text-white font-bold px-6 py-4 rounded-sm uppercase tracking-widest text-xs md:text-sm hover:bg-[#68c668] transition duration-300">
+                                    Hablar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 relative min-h-[280px] lg:min-h-full order-1 lg:order-2">
+                            <img src="https://seniorliving.servicios-habitat.com/habitat_gallery/20260210-DEV-GOOGLE-IMAGE-ADS-ENTORNODETALLES idea 8.webp" alt="Calidez humana en Hábitat Senior Living" class="w-full h-full object-cover">
+                            <div class="absolute top-4 right-4 bg-karu-arena text-karu-verde font-serif font-bold text-2xl md:text-3xl px-4 py-2 rounded-sm shadow-md text-right">
+                                Razón 10 <span class="text-xs font-sans text-karu-verde uppercase tracking-widest block">de 10</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabla Comparativa Directa (Por qué Hábitat supera a otras opciones) -->
+    <section class="py-16 md:py-24 px-6 bg-white relative z-20">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-karu-arena block mb-2">Comparativa Transparente</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-karu-verde mb-4">
+                    Hábitat Senior Living vs. <span class="text-karu-arena italic">Otras Opciones</span>
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Antes de decidir, verifica que la residencia que estás evaluando cumpla con todos estos estándares:
+                </p>
+            </div>
+
+            <div class="overflow-x-auto rounded-2xl shadow-xl border border-gray-200">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-karu-verde text-white">
+                            <th class="p-5 md:p-6 font-serif text-lg md:text-xl w-1/2">Criterio de Evaluación</th>
+                            <th class="p-5 md:p-6 font-serif text-lg md:text-xl text-center bg-karu-arena text-karu-verde font-bold w-1/4">Hábitat Senior Living</th>
+                            <th class="p-5 md:p-6 font-serif text-base md:text-lg text-center text-gray-300 w-1/4">Hogares Tradicionales</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 text-sm md:text-base">
+                        <tr class="hover:bg-karu-claro/50 transition">
+                            <td class="p-5 font-medium text-karu-verde">Enfermería 24/7 y equipo médico interdisciplinario</td>
+                            <td class="p-5 text-center bg-karu-claro/70 font-bold text-karu-verde">✓ Incluido 24/7</td>
+                            <td class="p-5 text-center text-gray-500">Parcial o externo</td>
+                        </tr>
+                        <tr class="hover:bg-karu-claro/50 transition">
+                            <td class="p-5 font-medium text-karu-verde">Instalaciones tipo Club (Piscina, Gym, Spa, Jardines)</td>
+                            <td class="p-5 text-center bg-karu-claro/70 font-bold text-karu-verde">✓ En nuestras sedes</td>
+                            <td class="p-5 text-center text-gray-500">Casas adaptadas</td>
+                        </tr>
+                        <tr class="hover:bg-karu-claro/50 transition">
+                            <td class="p-5 font-medium text-karu-verde">Ubicaciones exclusivas dentro de Medellín y el Sur</td>
+                            <td class="p-5 text-center bg-karu-claro/70 font-bold text-karu-verde">✓ 3 Sedes a elección</td>
+                            <td class="p-5 text-center text-gray-500">1 sola ubicación</td>
+                        </tr>
+                        <tr class="hover:bg-karu-claro/50 transition">
+                            <td class="p-5 font-medium text-karu-verde">Gastronomía gourmet avalada por nutricionista</td>
+                            <td class="p-5 text-center bg-karu-claro/70 font-bold text-karu-verde">✓ Menú personalizado</td>
+                            <td class="p-5 text-center text-gray-500">Menú estándar</td>
+                        </tr>
+                        <tr class="hover:bg-karu-claro/50 transition">
+                            <td class="p-5 font-medium text-karu-verde">Experiencia y respaldo institucional</td>
+                            <td class="p-5 text-center bg-karu-claro/70 font-bold text-karu-verde">✓ +15 años</td>
+                            <td class="p-5 text-center text-gray-500">Variable</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE FORMULARIO PRINCIPAL (IGUAL AL DEL SITIO DE HÁBITAT) -->
+    <section id="formulario-principal" class="py-24 px-6 relative bg-cover bg-center" style="background-image: url('https://seniorliving.servicios-habitat.com/hero_slides/hero_2.png');">
+        <!-- Overlay oscuro para legibilidad del texto blanco -->
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
+            <div class="drop-shadow-lg">
+                <span class="inline-block border border-karu-arena/50 bg-black/30 text-karu-arena text-xs uppercase tracking-widest px-4 py-1.5 rounded-sm mb-4 font-serif">
+                    Atención Personalizada
+                </span>
+                <h2 class="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">
+                    El bienestar se <span class="text-karu-arena italic">siente</span>,<br>se vive cada día.
+                </h2>
+                <p class="text-lg leading-relaxed mb-8 text-gray-100">
+                    Ya conoces las 10 razones que hacen de Hábitat la residencia ideal en Medellín. Déjanos tus datos para recibir precios detallados por sede o agendar un recorrido guiado.
+                </p>
+                <ul class="space-y-3 text-gray-200 text-sm md:text-base">
+                    <li class="flex items-center gap-3">
+                        <span class="w-6 h-6 rounded-full bg-karu-arena text-karu-verde flex items-center justify-center font-bold text-xs">1</span>
+                        <span>Asesoría cálida y confidencial para tu familia</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-6 h-6 rounded-full bg-karu-arena text-karu-verde flex items-center justify-center font-bold text-xs">2</span>
+                        <span>Cotización clara según el nivel de acompañamiento requerido</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-6 h-6 rounded-full bg-karu-arena text-karu-verde flex items-center justify-center font-bold text-xs">3</span>
+                        <span>Invitación a conocer nuestras sedes presencial o virtualmente</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="bg-white text-karu-verde p-10 lg:p-14 shadow-2xl rounded-sm">
+                    <h3 class="text-3xl font-serif mb-2">Solicita Información</h3>
+                    <p class="text-sm text-karu-verde opacity-80 mb-8">Déjenos sus datos y un asesor se pondrá en contacto para brindarle información sobre nuestros planes.</p>
+                    <form id="form-inline" action="gracias.html" class="space-y-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider font-bold mb-2">Nombre completo</label>
+                            <input type="text" class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde" placeholder="Ej. Juan Pérez" name="nombre" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider font-bold mb-2">Correo electrónico</label>
+                            <input type="email" class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde" placeholder="juan@correo.com" name="email" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider font-bold mb-2">Teléfono</label>
+                            <input type="tel" class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde" placeholder="+57 300 000 0000" name="celular" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider font-bold mb-2">Sede de interés</label>
+                            <select class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde" name="para_quien" required>
+                                <option value="" disabled selected>Selecciona una sede</option>
+                                <option value="Bernal">Bernal — desde $8.500.000</option>
+                                <option value="Balsos">Balsos — desde $12.300.000</option>
+                                <option value="Suramerica">Suramérica — desde $12.800.000</option>
+                            </select>
+                        </div>
+                        <div class="flex items-start gap-2 pt-2">
+                            <input type="checkbox" id="privacy-inline" name="datos" value="Sí" class="mt-0.5 accent-karu-verde" required>
+                            <label for="privacy-inline" class="text-[11px] text-gray-500 leading-tight">
+                                Acepto la <a href="politica-de-privacidad.html" target="_blank" class="underline hover:text-karu-verde">política de tratamiento de datos</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="w-full bg-karu-verde text-white py-4 mt-6 uppercase tracking-widest text-sm font-bold hover:bg-karu-arena hover:text-karu-verde transition duration-300">Enviar</button>
+                        
+                        <div class="mt-8 text-center border-t border-gray-200 pt-6">
+                            <p class="text-sm font-bold text-karu-verde uppercase tracking-wide">
+                                ¿Prefieres hablar ahora?<br>
+                                <a href="tel:+573206872012" class="inline-block mt-2 text-karu-arena text-lg hover:text-karu-verde transition duration-300">Llámanos: +57 320 6872012</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sedes Section -->
+    <section id="sedes-section" class="py-20 px-6 bg-karu-claro relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif text-karu-verde mb-4">
+                    ¿Cuál de nuestras sedes en Medellín te interesa visitar?
+                </h2>
+                <div class="w-16 h-1 bg-karu-arena mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Sede Los Bernal -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-100">
+                    <img src="https://seniorliving.servicios-habitat.com/habitat_gallery/_LEU4760.webp" alt="Sede Los Bernal" class="w-full h-56 object-cover">
+                    <div class="p-6 text-center flex flex-col items-center flex-grow">
+                        <h3 class="text-2xl font-serif text-karu-verde mb-2">Sede Los Bernal</h3>
+                        <p class="text-gray-500 text-sm mb-1">Cl. 15 #80-151, Medellín, Belén</p>
+                        <p class="text-gray-500 text-sm mb-4 flex items-center gap-1">
+                            <svg class="w-3 h-3 text-karu-arena" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            (+57) 320 687 20 12
+                        </p>
+                        <p class="text-gray-600 mb-6">Planes desde <strong class="text-karu-verde text-lg">$8.500.000</strong></p>
+                        <button onclick="openModalWithSede('Bernal')" class="w-full inline-flex justify-center items-center gap-2 bg-karu-verde text-white font-bold py-3 px-4 rounded-lg text-sm hover:bg-karu-arena hover:text-karu-verde transition duration-300 mt-auto mb-2">
+                            Solicitar cotización Sede Bernal
+                        </button>
+                        <a href="https://wa.me/573206872012?text=Hola,%20quisiera%20informaci%C3%B3n%20sobre%20la%20Sede%20Los%20Bernal" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-[#7fd77f] text-white font-bold py-2.5 px-4 rounded-lg text-xs hover:bg-[#68c668] transition duration-300">
+                            Escríbenos por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sede Los Balsos -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-100">
+                    <img src="https://seniorliving.servicios-habitat.com/habitat_gallery/_MER0657.webp" alt="Sede Los Balsos" class="w-full h-56 object-cover">
+                    <div class="p-6 text-center flex flex-col items-center flex-grow">
+                        <h3 class="text-2xl font-serif text-karu-verde mb-2">Sede Los Balsos</h3>
+                        <p class="text-gray-500 text-sm mb-1">Transv inferior N° 6 sur 191 Interior 116, Medellín</p>
+                        <p class="text-gray-500 text-sm mb-4 flex items-center gap-1">
+                            <svg class="w-3 h-3 text-karu-arena" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            (+57) 320 687 20 12
+                        </p>
+                        <p class="text-gray-600 mb-6">Planes desde <strong class="text-karu-verde text-lg">$12.300.000</strong></p>
+                        <button onclick="openModalWithSede('Balsos')" class="w-full inline-flex justify-center items-center gap-2 bg-karu-verde text-white font-bold py-3 px-4 rounded-lg text-sm hover:bg-karu-arena hover:text-karu-verde transition duration-300 mt-auto mb-2">
+                            Solicitar cotización Sede Balsos
+                        </button>
+                        <a href="https://wa.me/573206872012?text=Hola,%20quisiera%20informaci%C3%B3n%20sobre%20la%20Sede%20Los%20Balsos" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-[#7fd77f] text-white font-bold py-2.5 px-4 rounded-lg text-xs hover:bg-[#68c668] transition duration-300">
+                            Escríbenos por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sede Suramérica -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-100">
+                    <img src="https://seniorliving.servicios-habitat.com/habitat_gallery/_MER0311.webp" alt="Sede Suramérica" class="w-full h-56 object-cover">
+                    <div class="p-6 text-center flex flex-col items-center flex-grow">
+                        <h3 class="text-2xl font-serif text-karu-verde mb-2">Sede Suramérica</h3>
+                        <p class="text-gray-500 text-sm mb-1">Cl. 77 Sur # 50A 290 La Estrella, Antioquia</p>
+                        <p class="text-gray-500 text-sm mb-4 flex items-center gap-1">
+                            <svg class="w-3 h-3 text-karu-arena" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            (+57) 320 687 20 12
+                        </p>
+                        <p class="text-gray-600 mb-6">Planes desde <strong class="text-karu-verde text-lg">$12.800.000</strong></p>
+                        <button onclick="openModalWithSede('Suramerica')" class="w-full inline-flex justify-center items-center gap-2 bg-karu-verde text-white font-bold py-3 px-4 rounded-lg text-sm hover:bg-karu-arena hover:text-karu-verde transition duration-300 mt-auto mb-2">
+                            Solicitar cotización Sede Suramérica
+                        </button>
+                        <a href="https://wa.me/573206872012?text=Hola,%20quisiera%20informaci%C3%B3n%20sobre%20la%20Sede%20Suram%C3%A9rica" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-[#7fd77f] text-white font-bold py-2.5 px-4 rounded-lg text-xs hover:bg-[#68c668] transition duration-300">
+                            Escríbenos por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historias de Vida / Testimonios Reales -->
+    <section class="py-24 px-6 bg-white relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-karu-arena block mb-2">Testimonios Reales</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-karu-verde mb-6">
+                    Historias de Vida en Hábitat
+                </h2>
+                <div class="w-16 h-1 bg-karu-arena mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Video 1 -->
+                <div class="flex flex-col text-center">
+                    <div class="w-full aspect-video rounded-2xl overflow-hidden shadow-lg mb-6">
+                        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube-nocookie.com/embed/aCtlU9anvdw?rel=0&amp;modestbranding=1" title="Testimonio Dr. Iván Darío Vélez" width="100%"></iframe>
+                    </div>
+                    <h3 class="font-bold text-karu-verde text-lg mb-1">Dr. Iván Darío Vélez</h3>
+                    <p class="text-gray-500 text-sm">Nos da a conocer su día a día en Hábitat</p>
+                </div>
+                <!-- Video 2 -->
+                <div class="flex flex-col text-center">
+                    <div class="w-full aspect-video rounded-2xl overflow-hidden shadow-lg mb-6">
+                        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube-nocookie.com/embed/rew9Ih2gI34?rel=0&amp;modestbranding=1" title="Testimonio Cecilia Agudelo" width="100%"></iframe>
+                    </div>
+                    <h3 class="font-bold text-karu-verde text-lg mb-1">Cecilia Agudelo</h3>
+                    <p class="text-gray-500 text-sm">Nos cuenta cómo ha sido su vida en Hábitat</p>
+                </div>
+                <!-- Video 3 -->
+                <div class="flex flex-col text-center">
+                    <div class="w-full aspect-video rounded-2xl overflow-hidden shadow-lg mb-6">
+                        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube-nocookie.com/embed/lsk11DeUUYg?rel=0&amp;modestbranding=1" title="Testimonio María Norela Rúa" width="100%"></iframe>
+                    </div>
+                    <h3 class="font-bold text-karu-verde text-lg mb-1">María Norela Rúa</h3>
+                    <p class="text-gray-500 text-sm">Nos comparte su experiencia en Hábitat</p>
+                </div>
+            </div>
+
+            <div class="mt-14 text-center">
+                <a href="#formulario-principal" class="inline-block bg-karu-verde text-white font-bold px-10 py-4 uppercase tracking-widest text-sm hover:bg-karu-arena hover:text-karu-verde transition duration-300 shadow-lg">
+                    Solicita Información Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating CTA Button -->
+    <div class="fixed bottom-6 right-6 z-[60] flex flex-col gap-4">
+        <a href="#" onclick="openModal(event)" class="inline-flex items-center justify-center gap-2 bg-[#D4A843] text-[#2C3E2D] font-bold px-6 py-4 rounded-full text-sm uppercase tracking-widest hover:bg-[#c29633] transition duration-300 shadow-2xl border border-[#b88f34] hover:-translate-y-1 transform">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+            </svg>
+            SOLICITA INFORMACIÓN
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-karu-verde text-karu-marfil py-8 px-6 md:px-12 w-full relative z-20">
+        <div class="w-full flex items-center justify-center">
+            <div class="text-sm text-gray-200 opacity-90 text-center">
+                &copy; 2026 Hábitat Suramérica. Todos los derechos reservados. | <a href="politica-de-privacidad.html" class="underline hover:text-white transition">Política de tratamiento de datos</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Formulario (Idéntico al sitio de Hábitat) -->
+    <div id="contactModal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-sm px-4">
+        <div class="bg-white text-karu-verde p-10 md:p-14 shadow-2xl relative w-full max-w-lg transform scale-95 transition-transform duration-300" id="modalContent">
+            <button onclick="closeModal()" class="absolute top-4 right-6 text-gray-400 hover:text-karu-verde transition text-4xl">&times;</button>
+            <h3 class="text-3xl font-serif mb-2">Solicita Información</h3>
+            <p id="modalSubtitle" class="text-sm text-karu-verde opacity-80 mb-8">Déjenos sus datos y un asesor se pondrá en contacto para brindarle información sobre nuestros planes.</p>
+            <form id="form-modal" action="gracias.html" class="space-y-6">
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-bold mb-2">Nombre completo</label>
+                    <input type="text" class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde" placeholder="Ej. Juan Pérez" name="nombre" required>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-bold mb-2">Correo electrónico</label>
+                    <input type="email" class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde" placeholder="juan@correo.com" name="email" required>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-bold mb-2">Teléfono</label>
+                    <input type="tel" class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde" placeholder="+57 300 000 0000" name="celular" required>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-bold mb-2">Sede de interés</label>
+                    <select id="modalSedeSelect" class="w-full border-b border-karu-piedra py-3 focus:outline-none focus:border-karu-verde bg-transparent text-karu-verde" name="para_quien" required>
+                        <option value="" disabled selected>Selecciona una sede</option>
+                        <option value="Bernal">Bernal — desde $8.500.000</option>
+                        <option value="Balsos">Balsos — desde $12.300.000</option>
+                        <option value="Suramerica">Suramérica — desde $12.800.000</option>
+                    </select>
+                </div>
+                <div class="flex items-start gap-2 pt-2">
+                    <input type="checkbox" id="privacy-modal" name="datos" value="Sí" class="mt-0.5 accent-karu-verde" required>
+                    <label for="privacy-modal" class="text-[11px] text-gray-500 leading-tight">
+                        Acepto la <a href="politica-de-privacidad.html" target="_blank" class="underline hover:text-karu-verde">política de tratamiento de datos</a>
+                    </label>
+                </div>
+                <button type="submit" class="w-full bg-karu-verde text-white py-4 mt-6 uppercase tracking-widest text-sm font-bold hover:bg-karu-arena hover:text-karu-verde transition duration-300">Enviar</button>
+                <div class="mt-6 text-center border-t border-gray-200 pt-4">
+                    <p class="text-sm font-bold text-karu-verde uppercase tracking-wide">
+                        ¿Prefieres hablar ahora?<br>
+                        <a href="tel:+573206872012" class="inline-block mt-2 text-karu-arena hover:text-karu-verde transition duration-300">Llámanos: +57 320 6872012</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Interactividad Progresiva de las 10 Razones + Modal -->
+    <script>
+        const modal = document.getElementById('contactModal');
+        const modalContent = document.getElementById('modalContent');
+        const modalSedeSelect = document.getElementById('modalSedeSelect');
+        const stickyHeader = document.getElementById('stickyProgressHeader');
+        const topProgressBar = document.getElementById('topProgressBar');
+        const progressCounterText = document.getElementById('progressCounterText');
+        const reasonCards = document.querySelectorAll('.reason-card');
+        const reasonPills = document.querySelectorAll('[data-reason-nav]');
+
+        function openModal(e) {
+            if (e) e.preventDefault();
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modalContent.classList.remove('scale-95');
+        }
+
+        function openModalWithContext(contextText) {
+            openModal();
+        }
+
+        function openModalWithSede(sedeValue) {
+            if (modalSedeSelect) {
+                modalSedeSelect.value = sedeValue;
+            }
+            openModal();
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modalContent.classList.add('scale-95');
+        }
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        function unlockRemainingReasons(scrollToSix = false) {
+            const btnReveal = document.getElementById('btnRevealMore');
+            if (btnReveal) {
+                btnReveal.innerHTML = '<span>✓ 10 Razones Desbloqueadas</span>';
+            }
+            if (scrollToSix) {
+                const r6 = document.getElementById('razon-6');
+                if (r6) r6.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Revelado progresivo de cada razón al hacer scroll y actualización de la barra superior
+        const observerOptions = {
+            root: null,
+            rootMargin: '-15% 0px -20% 0px',
+            threshold: 0.15
+        };
+
+        const reasonObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    const reasonNum = parseInt(entry.target.getAttribute('data-reason'), 10);
+                    if (reasonNum) {
+                        const pct = Math.min(100, reasonNum * 10);
+                        topProgressBar.style.width = pct + '%';
+                        progressCounterText.textContent = `Razón ${reasonNum} de 10`;
+
+                        reasonPills.forEach(pill => {
+                            const navNum = parseInt(pill.getAttribute('data-reason-nav'), 10);
+                            if (navNum <= reasonNum) {
+                                pill.classList.add('active');
+                            } else {
+                                pill.classList.remove('active');
+                            }
+                        });
+                    }
+                }
+            });
+        }, observerOptions);
+
+        reasonCards.forEach(card => reasonObserver.observe(card));
+
+        // Mostrar barra fija superior cuando el usuario baja del Hero
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                stickyHeader.classList.remove('-translate-y-full');
+            } else {
+                stickyHeader.classList.add('-translate-y-full');
+            }
+        });
+    </script>
+
+    <!-- Google Sheets Form Submission (Idéntico al sitio de Hábitat) -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxlEJsLWK4WG6XLPfjpw80w9jnu2CoqrVaUmlCicyrtCnUn3htn4BQCd5lBKYdushMuCg/exec';
+        const forms = document.querySelectorAll('form');
+
+        forms.forEach(form => {
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                
+                const btn = form.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = 'Enviando...';
+                btn.disabled = true;
+
+                const formData = new FormData(form);
+
+                if (formData.has('celular')) {
+                    const cel = formData.get('celular');
+                    if (cel.trim().startsWith('+')) {
+                        formData.set('celular', "'" + cel.trim());
+                    }
+                }
+
+                const urlParams = new URLSearchParams(window.location.search);
+                
+                const utms = ['source', 'medium', 'campaign', 'content', 'term'];
+                utms.forEach(utm => {
+                    if (urlParams.has('utm_' + utm)) {
+                        formData.append('UTM ' + utm.charAt(0).toUpperCase() + utm.slice(1), urlParams.get('utm_' + utm));
+                        formData.append('utm_' + utm, urlParams.get('utm_' + utm));
+                    }
+                });
+                
+                if (urlParams.has('gclid')) {
+                    formData.append('ID clic (GCLID / FBCLID)', urlParams.get('gclid'));
+                    formData.append('id_clic', urlParams.get('gclid'));
+                    formData.append('gclid', urlParams.get('gclid'));
+                }
+                if (urlParams.has('fbclid')) {
+                    formData.append('ID clic (GCLID / FBCLID)', urlParams.get('fbclid'));
+                    formData.append('id_clic', urlParams.get('fbclid'));
+                    formData.append('fbclid', urlParams.get('fbclid'));
+                }
+                
+                const currentUrl = window.location.href.split('?')[0];
+                formData.append('URL / Landing de origen', currentUrl);
+                formData.append('url_origen', currentUrl);
+                formData.append('url', currentUrl);
+                
+                formData.append('Fuente del lead', 'Form - Hábitat Competencia');
+                formData.append('fuente', 'Form - Hábitat Competencia');
+                formData.append('fuente_lead', 'Form - Hábitat Competencia');
+                
+                formData.append('sheet_name', 'Leads General');
+
+                fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
+                    .then(response => {
+                        setTimeout(() => { window.location.href = form.getAttribute('action'); }, 800);
+                    })
+                    .catch(error => {
+                        console.error('Error!', error.message);
+                        alert('Hubo un error enviando el formulario. Por favor intenta de nuevo.');
+                        btn.innerHTML = originalText;
+                        btn.disabled = false;
+                    });
+            });
+        });
+    </script>
+</body>
+</html>
