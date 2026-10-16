@@ -1129,6 +1129,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 const formData = new FormData(form);
 
+                if (formData.has('para_quien')) {
+                    const sedeVal = formData.get('para_quien');
+                    formData.append('sede', sedeVal);
+                    formData.append('Sede de interés', sedeVal);
+                }
+
                 if (formData.has('celular')) {
                     const cel = formData.get('celular');
                     if (cel.trim().startsWith('+')) {
