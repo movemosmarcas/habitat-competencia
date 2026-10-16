@@ -1143,35 +1143,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 }
 
                 const urlParams = new URLSearchParams(window.location.search);
-                
-                const utms = ['source', 'medium', 'campaign', 'content', 'term'];
-                utms.forEach(utm => {
-                    if (urlParams.has('utm_' + utm)) {
-                        formData.append('UTM ' + utm.charAt(0).toUpperCase() + utm.slice(1), urlParams.get('utm_' + utm));
-                        formData.append('utm_' + utm, urlParams.get('utm_' + utm));
-                    }
-                });
-                
-                if (urlParams.has('gclid')) {
-                    formData.append('ID clic (GCLID / FBCLID)', urlParams.get('gclid'));
-                    formData.append('id_clic', urlParams.get('gclid'));
-                    formData.append('gclid', urlParams.get('gclid'));
-                }
-                if (urlParams.has('fbclid')) {
-                    formData.append('ID clic (GCLID / FBCLID)', urlParams.get('fbclid'));
-                    formData.append('id_clic', urlParams.get('fbclid'));
-                    formData.append('fbclid', urlParams.get('fbclid'));
-                }
-                
                 const currentUrl = window.location.href.split('?')[0];
-                formData.append('URL / Landing de origen', currentUrl);
-                formData.append('url_origen', currentUrl);
-                formData.append('url', currentUrl);
-                
-                formData.append('Fuente del lead', 'Form - Hábitat Competencia');
-                formData.append('fuente', 'Form - Hábitat Competencia');
-                formData.append('fuente_lead', 'Form - Hábitat Competencia');
-                
+
+                // En la pestaña "Leads General" existe la columna adicional "Sede de interés" en la Columna F,
+                // lo que desplaza 1 posición hacia la derecha las columnas desde la F en adelante respecto al Apps Script:
+                // Col I (Servicio de interés) <- recibe 'datos'
+                formData.set('datos', 'Residencia');
+
+                // Col J (Acepta tratamiento de datos) <- recibe 'Fuente del lead' / 'fuente' / 'fuente_lead'
+                formData.append('Fuente del lead', 'Sí');
+                formData.append('fuente', 'Sí');
+                formData.append('fuente_lead', 'Sí');
+
+                // Col K (Fuente del lead) <- recibe 'UTM Source' / 'utm_source'
+                if (urlParams.has('utm_source')) {
+                    formData.append('UTM Source', urlParams.get('utm_source'));
+                    formData.append('utm_source', urlParams.get('utm_source'));
+                }
+
+                // Col L (UTM Source) <- recibe 'UTM Medium' / 'utm_medium'
+                formData.append('UTM Medium', 'Form - Hábitat Competencia');
+                formData.append('utm_medium', 'Form - Hábitat Competencia');
+
+                // Col M (UTM Medium) <- recibe 'UTM Campaign' / 'utm_campaign'
+                if (urlParams.has('utm_medium')) {
+                    formData.append('UTM Campaign', urlParams.get('utm_medium'));
+                    formData.append('utm_campaign', urlParams.get('utm_medium'));
+                }
+
+                // Col N (UTM Campaign) <- recibe 'UTM Content' / 'utm_content'
+                if (urlParams.has('utm_campaign')) {
+                    formData.append('UTM Content', urlParams.get('utm_campaign'));
+                    formData.append('utm_content', urlParams.get('utm_campaign'));
+                }
+
+                // Col O (UTM Content) <- recibe 'UTM Term' / 'utm_term'
+                if (urlParams.has('utm_content')) {
+                    formData.append('UTM Term', urlParams.get('utm_content'));
+                    formData.append('utm_term', urlParams.get('utm_content'));
+                }
+
+                // Col P (UTM Term) <- recibe 'URL / Landing de origen' / 'url_origen' / 'url'
+                if (urlParams.has('utm_term')) {
+                    formData.append('URL / Landing de origen', urlParams.get('utm_term'));
+                    formData.append('url_origen', urlParams.get('utm_term'));
+                    formData.append('url', urlParams.get('utm_term'));
+                }
+
+                // Col Q (URL / Landing de origen) <- recibe 'ID clic (GCLID / FBCLID)' / 'id_clic' / 'gclid'
+                formData.append('ID clic (GCLID / FBCLID)', currentUrl);
+                formData.append('id_clic', currentUrl);
+                formData.append('gclid', currentUrl);
+
                 formData.append('sheet_name', 'Leads General');
 
                 fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' })

@@ -293,18 +293,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 }
 
                 const urlParams = new URLSearchParams(window.location.search);
-                
-                if (urlParams.has('utm_source')) formData.append('UTM Source', urlParams.get('utm_source'));
-                if (urlParams.has('utm_medium')) formData.append('UTM Medium', urlParams.get('utm_medium'));
-                if (urlParams.has('utm_campaign')) formData.append('UTM Campaign', urlParams.get('utm_campaign'));
-                if (urlParams.has('utm_content')) formData.append('UTM Content', urlParams.get('utm_content'));
-                if (urlParams.has('utm_term')) formData.append('UTM Term', urlParams.get('utm_term'));
-                
-                if (urlParams.has('gclid')) formData.append('ID clic (GCLID / FBCLID)', urlParams.get('gclid'));
-                if (urlParams.has('fbclid')) formData.append('ID clic (GCLID / FBCLID)', urlParams.get('fbclid'));
-                
-                formData.append('URL / Landing de origen', window.location.href.split('?')[0]);
-                formData.append('Fuente del lead', 'Form - Hábitat Suramérica');
+                const currentUrl = window.location.href.split('?')[0];
+
+                formData.set('datos', 'Residencia');
+
+                formData.append('Fuente del lead', 'Sí');
+                formData.append('fuente', 'Sí');
+                formData.append('fuente_lead', 'Sí');
+
+                if (urlParams.has('utm_source')) {
+                    formData.append('UTM Source', urlParams.get('utm_source'));
+                    formData.append('utm_source', urlParams.get('utm_source'));
+                }
+
+                formData.append('UTM Medium', 'Form - Hábitat Competencia');
+                formData.append('utm_medium', 'Form - Hábitat Competencia');
+
+                if (urlParams.has('utm_medium')) {
+                    formData.append('UTM Campaign', urlParams.get('utm_medium'));
+                    formData.append('utm_campaign', urlParams.get('utm_medium'));
+                }
+
+                if (urlParams.has('utm_campaign')) {
+                    formData.append('UTM Content', urlParams.get('utm_campaign'));
+                    formData.append('utm_content', urlParams.get('utm_campaign'));
+                }
+
+                if (urlParams.has('utm_content')) {
+                    formData.append('UTM Term', urlParams.get('utm_content'));
+                    formData.append('utm_term', urlParams.get('utm_content'));
+                }
+
+                if (urlParams.has('utm_term')) {
+                    formData.append('URL / Landing de origen', urlParams.get('utm_term'));
+                    formData.append('url_origen', urlParams.get('utm_term'));
+                    formData.append('url', urlParams.get('utm_term'));
+                }
+
+                formData.append('ID clic (GCLID / FBCLID)', currentUrl);
+                formData.append('id_clic', currentUrl);
+                formData.append('gclid', currentUrl);
+
                 formData.append('sheet_name', 'Leads General');
 
                 fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
